@@ -1,0 +1,69 @@
+.alignX {
+    text-align: center;
+}
+
+.contRofl_clr {
+    width: 100%;
+    float: left;
+    @include clearfix;
+}
+
+%flexImg99 {
+    max-width: 100%;
+    height: auto;
+    display: inline;
+}
+
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.boldenX {
+    font-weight: bold;
+    font-weight: 900;
+}
+
+.wrapCenterCont {
+    text-align: center;
+    height: 100%;
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+.centeredContX {
+    display: inline-block;
+    vertical-align: middle;
+    width: 96%;
+    ///it is FUCKING important to define the width do not exceed 98% Width Nigga
+}
+
+.captionX99 {
+    @extend .contRofl_clr;
+    padding: 1em 0;
+    margin-top: 1.6em;
+    text-align: center;
+    h2 {
+        padding-bottom: 0.3em;
+        border-bottom: 1px solid $separator;
+        display: inline-block;
+        @include breakpoint($min_768) {
+            @include scut-side-lined;
+            text-transform: uppercase;
+            padding: 0;
+            border: 0;
+        }
+    }
+}
+
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+    //em(99px)
+}

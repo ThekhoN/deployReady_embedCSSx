@@ -1,0 +1,64 @@
+.headerBannerX {
+    @extend .contRofl_clr;
+    //reset it
+    height: 16em;
+    background: yellow; 
+    img {
+        @extend %flexImg99;
+        float: left;
+    }
+}
+
+.navContX {
+    @extend .contRofl_clr;
+    ul {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        li {
+            float: left;
+            display: block;
+            width: 20%;
+            color: red;
+            padding: 0.6em 0;
+            a {
+                @extend .contRofl_clr;
+                display: block;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 0.875em;
+                padding: 0.2em 0.6em;
+                text-decoration: none;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+.subNavContX {
+    @extend .contRofl_clr;
+    ul {
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+        li {
+            float: left;
+            display: block;
+            width: 33.33%;
+            color: red;
+            padding: 0.6em 0;
+            a {
+                @extend .contRofl_clr;
+                display: block;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: em(12px);
+                padding: 0.2em 0.6em;
+                text-decoration: none;
+                box-sizing: border-box;
+            }
+        }
+    }
+}

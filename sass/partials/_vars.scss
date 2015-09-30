@@ -1,0 +1,34 @@
+//media query definitions//
+///Media Sizes///
+/* Start with mobile first definitions */
+$min320_max640: 320px 640px; //min and max width
+$max_768: max-width 768px;
+$max_1200: max-width 1200px;
+$min_768: min-width 768px;
+$min_1200: min-width 1200px;
+$smallest: 320px;
+$medium_768: 768px;
+$medium_1024: 1024px;
+$big:1300px;
+$base-font-size:16px;
+
+//all colors//
+$primary:#f40000;
+$secondary: #f6f6f6;
+$hover: #606060;
+$textCol: #212121;
+$separator: #cccccc;
+$darkBG:#000000;
+
+//all fonts//
+$sansSerifFont: 'Roboto',
+sans-serif;
+$displayFont: Georgia, serif;
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}

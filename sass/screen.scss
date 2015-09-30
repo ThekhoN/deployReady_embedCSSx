@@ -1,0 +1,135 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@import "susy";
+@import "breakpoint";
+@import "bourbon/bourbon";
+@import "scut";
+
+@import 'partials/vars';
+@import 'partials/utilities';
+@import 'partials/navHeader';
+
+$susy:( container:1664,
+columns:12,
+gutters:0.096,
+gutter-position:after,
+math:fluid,
+debug: (image: show),
+output:float // For Debugging - mainWrapper should not have a bg Color
+);
+
+
+#mainWrapperX_PromotionName {
+    @include container(1664px);
+    font-size: 1em;
+    line-height: 1;
+    font-size: 14px;
+    font-family: $sansSerifFont;
+    position: relative;
+    color: $textCol;
+
+    @include breakpoint($min_768){
+        font-size: 16px;
+    }
+    
+    h2 {
+        font-size: 2.65em;
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: $displayFont;
+        letter-spacing: 1px;
+    }
+    h3 {
+        font-size: 1.625em;
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: $displayFont;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    ul {
+        list-style: none;
+    }
+    p {
+        max-width: 400px;
+    }
+    
+    a img {
+        border: none;
+    }
+    a {
+        outline: 0;
+        text-decoration: none;
+    }
+    img.map,
+    map area {
+        outline: none;
+    }
+}
+
+.shop99X {
+    text-transform: uppercase;
+    font-size: 0.975em;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #ffffff;
+    color: #212121;
+    padding: 0.5em 0.9em;
+    font-weight: bold;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.35);
+    @include transition(all 0.3s ease-in-out);
+}
+
+
+
+//////////////Reset Icon-fonts///////////////////
+/////////////Snapdeal UI RESETS///////////////
+.navFixedSmall {
+    position: static !important;
+    /*this resets FIXED widget to static position*/
+}
+
+.gutterPromotionHiddenOnOtherPages {
+    display: none !important;
+}
+
+.bottomFreezeDiv,
+#breadCrumbWrapper,
+#rightLangWrapper {
+    display: none !important;
+    z-index: -1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.header-fixed,
+.hd-rvmp.header-fixed,
+#headerTop,
+#headerFixed {
+    position: static !important;
+}
+
+#content_wrapper {
+    width: 100% !important;
+    padding: 0 !important;
+}
+/*weird fixed nav bar*/
+
+.fixed-header-slide {
+    min-height: 0px !important;
+}
+
+#dock.dock {
+    position: static !important;
+    top: -100px;
+    display: none;
+}
+/* ////////////////// ENDERINO RESETERINO ///////////////////// */
