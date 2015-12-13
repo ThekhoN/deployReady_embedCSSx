@@ -2,6 +2,14 @@
     text-align: center;
 }
 
+.align_Lx {
+    text-align: left;
+}
+
+.align_Rx {
+    text-align: right;
+}
+
 .contRofl_clr {
     width: 100%;
     float: left;
@@ -19,6 +27,14 @@
         content: "";
         display: table;
         clear: both;
+    }
+}
+
+.conditionalShowX {
+    display: none;
+    
+    @include breakpoint(980px){
+        display: block;
     }
 }
 
@@ -62,6 +78,8 @@
         }
     }
 }
+
+
 
 @function em($px, $base: $base-font-size) {
     @return ($px / $base) * 1em;

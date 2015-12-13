@@ -2,7 +2,7 @@
     @extend .contRofl_clr;
     //reset it
     height: 16em;
-    background: yellow; 
+    background: #f2f2f2; 
     img {
         @extend %flexImg99;
         float: left;
@@ -15,27 +15,53 @@
         display: block;
         width: 70%;
         margin: 0 auto;
+        
         li {
-            float: left;
-            display: block;
-            width: 20%;
-            color: red;
-            padding: 0.6em 0;
-            a {
-                @extend .contRofl_clr;
-                display: block;
-                text-align: center;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                font-size: 0.875em;
-                padding: 0.2em 0.6em;
-                text-decoration: none;
-                box-sizing: border-box;
+            float: none;
+            width: 15%;
+            font-size: 10px;
+            
+            
+            
+            @include breakpoint(1280px){
+                width: 15%;
+                font-size: 13px;
             }
+            
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 6px 0;
+            box-sizing: border-box;
+            border: 1px solid #cccccc;
+            background: #ffffff;
+            margin-right: 1%;
+            cursor: pointer;
+            
+            &.active, &:hover {
+                background: #4b8f92;
+                color: #ffffff;
+                -webkit-box-shadow: 0px 1px 2px 1px rgba(50, 50, 50, 0.15);
+                -moz-box-shadow:    0px 1px 2px 1px rgba(50, 50, 50, 0.15);
+                box-shadow:         0px 1px 2px 1px rgba(50, 50, 50, 0.15);
+            }
+            
+            &:last-child {
+                margin-right: 0;
+            }
+            
+            
+            
+
         }
-    }
+        
+        
+        }
+   
 }
 
+/* inter-page navigation  - external a links*/
 .subNavContX {
     @extend .contRofl_clr;
     ul {

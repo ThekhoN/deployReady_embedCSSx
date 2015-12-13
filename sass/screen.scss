@@ -13,12 +13,12 @@
 @import 'partials/utilities';
 @import 'partials/navHeader';
 
-$susy:( container:1664,
+$susy:( container:1920,
 columns:12,
 gutters:0.096,
 gutter-position:after,
 math:fluid,
-debug: (image: show),
+//debug: (image: show),
 output:float // For Debugging - mainWrapper should not have a bg Color
 );
 
@@ -120,6 +120,7 @@ output:float // For Debugging - mainWrapper should not have a bg Color
 #content_wrapper {
     width: 100% !important;
     padding: 0 !important;
+    margin: 0 !important;
 }
 /*weird fixed nav bar*/
 
